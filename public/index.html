@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JJGHP773HW"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-JJGHP773HW');
+  </script>
+  <meta name="theme-color" content="#06070b" />
+  <meta name="description" content="Coortx — the cognitive operating system for AI-native work." />
+  <title>Coortx — Never lose the thread again.</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <canvas id="universe" aria-hidden="true"></canvas>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="cursor" aria-hidden="true"></div>
+  <div class="cursor-dot" aria-hidden="true"></div>
+
+  <header class="nav shell">
+    <a class="brand" href="#top" aria-label="Coortx home">
+      <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+      <span>COORTX</span>
+    </a>
+    <nav aria-label="Primary">
+      <a href="#system">System</a>
+      <a href="#rescue">Rescue</a>
+      <a href="#open">Open core</a>
+    </nav>
+    <a class="nav-cta magnetic" href="#access">Request access</a>
+  </header>
+
+  <main id="top">
+    <section class="hero shell">
+      <div class="eyebrow reveal">A cognitive operating system</div>
+      <h1 class="hero-title" aria-label="Never lose the thread again.">
+        <span class="line reveal">Never lose</span>
+        <span class="line reveal delay-1">the thread <em>again.</em></span>
+      </h1>
+      <p class="hero-copy reveal delay-2">
+        Your windows, AI conversations, terminals, meetings and unfinished ideas become a living map of memory — ready to search, seal and re-enter.
+      </p>
+      <div class="hero-actions reveal delay-3">
+        <a class="button primary magnetic" href="#system">Enter the system <span>↘</span></a>
+        <a class="button ghost magnetic" href="#open">Explore open source</a>
+      </div>
+
+      <div class="orbital-ui" aria-hidden="true">
+        <div class="orbit orbit-a"><span></span><span></span><span></span></div>
+        <div class="orbit orbit-b"><span></span><span></span></div>
+        <div class="core"><b>57</b><small>active threads</small></div>
+        <div class="label label-a">Claude / product architecture</div>
+        <div class="label label-b">Terminal / context graph</div>
+        <div class="label label-c">Research / associative recall</div>
+      </div>
+
+      <div class="scroll-cue"><span></span>Scroll to descend</div>
+    </section>
+
+    <section class="manifesto shell section-pad" id="system">
+      <div class="section-index">01 / THE SYSTEM</div>
+      <div class="manifesto-grid">
+        <h2 class="section-title reveal">Your work is not a list.<br />It is a <em>world.</em></h2>
+        <p class="lede reveal">Coortx turns fragmented activity into cognitive neighborhoods: places you can recognize without remembering the exact tab, title or filename.</p>
+      </div>
+
+      <div class="memory-stage reveal">
+        <div class="stage-hud">
+          <span>COGNITIVE MAP</span>
+          <span>LOCAL • PRIVATE • LIVE</span>
+        </div>
+        <div class="memory-map" id="memoryMap">
+          <button class="node n1 active"><span>01</span>Launch</button>
+          <button class="node n2"><span>02</span>Product</button>
+          <button class="node n3"><span>03</span>Research</button>
+          <button class="node n4"><span>04</span>Life admin</button>
+          <button class="node n5"><span>05</span>Ghost work</button>
+          <svg viewBox="0 0 1000 560" preserveAspectRatio="none" aria-hidden="true">
+            <path d="M130 410 C260 260 350 370 470 250 S700 120 860 250" />
+            <path d="M150 420 C280 500 380 430 530 390 S740 470 875 315" />
+            <path d="M250 150 C360 240 360 310 470 250" />
+          </svg>
+          <div class="map-card">
+            <span class="map-kicker">CURRENT NEIGHBORHOOD</span>
+            <strong>Coortx launch system</strong>
+            <p>14 windows • 6 AI sessions • 3 unresolved decisions</p>
+            <div class="map-tags"><span>visual identity</span><span>open core</span><span>launch narrative</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="river-section section-pad">
+      <div class="shell river-head">
+        <div class="section-index">02 / THINKING RIVER</div>
+        <h2 class="section-title reveal">Time should feel like<br /><em>recognition.</em></h2>
+        <p class="lede reveal">Move through work as a continuous stream of attention. Branches reveal detours. Bright points reveal returns. Every summary stays connected to raw evidence.</p>
+      </div>
+      <div class="river-wrap reveal">
+        <canvas id="river" aria-label="Animated visualization of a thinking river"></canvas>
+        <div class="river-overlay shell">
+          <div class="river-date">TUE · JUL 27 · 09:42</div>
+          <div class="river-moment">
+            <small>YOU WERE HERE</small>
+            <strong>Defining the open-source boundary</strong>
+            <span>GitHub • Claude • Architecture notes • 18 min</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="rescue shell section-pad" id="rescue">
+      <div class="section-index">03 / WORKSPACE RESCUE</div>
+      <div class="split-head">
+        <h2 class="section-title reveal">Close the windows.<br />Keep the <em>memory.</em></h2>
+        <p class="lede reveal">Coortx packages the surrounding evidence, intent and next move into a restorable Memory Packet. Context becomes safe to close.</p>
+      </div>
+
+      <div class="rescue-console reveal" id="rescueConsole">
+        <div class="console-top">
+          <span>MEMORY PRESSURE</span>
+          <span class="pressure-value">72%</span>
+        </div>
+        <div class="console-grid">
+          <div class="window-cloud">
+            <div class="mini-window w1"><b>Claude</b><span>Positioning draft</span></div>
+            <div class="mini-window w2"><b>Terminal</b><span>coortx-core</span></div>
+            <div class="mini-window w3"><b>Figma</b><span>Memory universe</span></div>
+            <div class="mini-window w4"><b>Safari</b><span>Open-source strategy</span></div>
+            <div class="mini-window w5"><b>Notes</b><span>Launch checklist</span></div>
+            <div class="packet"><span></span><b>MEMORY<br/>PACKET</b></div>
+          </div>
+          <div class="rescue-copy">
+            <span class="status-dot">Ready to seal</span>
+            <h3>Coortx open-source launch</h3>
+            <p>Enough context has been captured to reconstruct this workspace later.</p>
+            <ul>
+              <li><span>✓</span> 14 windows indexed</li>
+              <li><span>✓</span> 6 AI sessions linked</li>
+              <li><span>✓</span> Last next-action detected</li>
+            </ul>
+            <button class="button primary magnetic" id="sealButton">Seal memory <span>↗</span></button>
+            <div class="sealed-message" aria-live="polite">Memory sealed. This workspace is safe to close.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="rooms section-pad">
+      <div class="shell">
+        <div class="section-index">04 / MEMORY ROOMS</div>
+        <h2 class="section-title reveal">Not folders.<br /><em>Places.</em></h2>
+        <div class="rooms-grid">
+          <article class="room-card reveal" data-room="01">
+            <div class="room-visual room-violet"><span></span><span></span><span></span></div>
+            <div class="room-meta"><small>ROOM 01</small><strong>Build</strong><p>Architecture, terminals, agents and product decisions.</p></div>
+          </article>
+          <article class="room-card reveal" data-room="02">
+            <div class="room-visual room-blue"><span></span><span></span><span></span></div>
+            <div class="room-meta"><small>ROOM 02</small><strong>Launch</strong><p>Narrative, visuals, contributors and launch sequence.</p></div>
+          </article>
+          <article class="room-card reveal" data-room="03">
+            <div class="room-visual room-teal"><span></span><span></span><span></span></div>
+            <div class="room-meta"><small>ROOM 03</small><strong>Explore</strong><p>Research trails, references and unfinished possibilities.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="open-core shell section-pad" id="open">
+      <div class="section-index">05 / OPEN CORE</div>
+      <div class="open-grid">
+        <div>
+          <h2 class="section-title reveal">Open memory infrastructure.<br /><em>Private cognition.</em></h2>
+          <p class="lede reveal">The capture engine, local event ledger, connectors and basic Rewind belong in the open. The adaptive cognitive experience becomes Coortx.</p>
+          <a class="button ghost magnetic reveal" href="https://github.com/fhorn97/coortx-core" target="_blank" rel="noopener">View on GitHub <span>↗</span></a>
+        </div>
+        <div class="terminal reveal" role="img" aria-label="Terminal showing Coortx installation">
+          <div class="terminal-bar"><i></i><i></i><i></i><span>coortx-core</span></div>
+          <pre><code><span class="muted">$</span> git clone github.com/fhorn97/coortx-core
+<span class="muted">$</span> cd coortx-core
+<span class="muted">$</span> ./scripts/start.sh
+
+<span class="success">✓ local event ledger ready</span>
+<span class="success">✓ private search index online</span>
+<span class="success">✓ rewind available at localhost:4242</span>
+
+<span class="cursor-block">_</span></code></pre>
+        </div>
+      </div>
+    </section>
+
+    <section class="final-cta shell" id="access">
+      <div class="cta-orb" aria-hidden="true"></div>
+      <div class="eyebrow reveal">COORTX PRIVATE BETA</div>
+      <h2 class="reveal">Build a better<br /><em>memory.</em></h2>
+      <p class="reveal">For people whose computers became extensions of their minds.</p>
+      <a class="button primary magnetic reveal" href="mailto:hello@coortx.ai?subject=Coortx%20private%20beta">Request access <span>↗</span></a>
+    </section>
+  </main>
+
+  <footer class="footer shell">
+    <a class="brand" href="#top"><span class="brand-mark"><i></i><i></i><i></i></span><span>COORTX</span></a>
+    <p>Nothing is lost. Everything is placed. One thing moves next.</p>
+    <span>© 2026 Coortx</span>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

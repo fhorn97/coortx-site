@@ -1,0 +1,11 @@
+name = "coortx-site"
+compatibility_date = "2024-09-23"
+account_id = "32a36e6381a1433a4f3f5d900c8ca3e7"
+
+routes = [
+  { pattern = "coortx.ai/*", zone_name = "coortx.ai" },
+  { pattern = "www.coortx.ai/*", zone_name = "coortx.ai" }
+]
+
+[assets]
+directory = "./public"
